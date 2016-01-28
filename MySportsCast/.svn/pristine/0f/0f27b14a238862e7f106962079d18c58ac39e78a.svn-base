@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/normal_margin"
+    android:layout_marginBottom="@dimen/normal_margin"
+    android:background="@drawable/input_box"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin" >
+
+        <TextView
+            android:id="@+id/sport_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:text="Foot ball"
+            android:textColor="#3772BE"
+            android:textSize="@dimen/heading3_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sport_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/small_margin"
+            android:text="Practice"
+            android:textColor="#3772BE"
+            android:textSize="@dimen/heading3_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/event_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/large_margin"
+        android:layout_marginRight="@dimen/large_margin"
+        android:layout_marginTop="@dimen/small_margin"
+        
+        android:singleLine="true"
+        android:ellipsize="end"
+                        
+        android:scrollHorizontally="true"
+        android:text="EVENT TITLE"
+        android:textColor="#000000"
+        android:textSize="@dimen/heading4_text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:orientation="horizontal" 
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" 
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/location_tv_icon"
+                    android:layout_width="@dimen/small_icon"
+                    android:layout_height="@dimen/small_icon"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/location_icon" />
+
+                <TextView
+                    android:id="@+id/location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/small_padding"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:text="NewHyderabadYorkyderabadYork"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/heading5_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/distance_icon"
+                    android:layout_width="@dimen/small_icon"
+                    android:layout_height="@dimen/small_icon"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_margin"
+                    android:layout_marginRight="@dimen/small_margin"
+                    android:src="@drawable/distance" />
+
+                <TextView
+                    android:id="@+id/distance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_padding"
+                    android:text="3898.18m"
+                    android:textColor="#848484"
+                    android:singleLine="true"
+                    android:textSize="@dimen/heading5_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/date_time_tv_icon"
+                android:layout_width="@dimen/small_icon"
+                android:layout_height="@dimen/small_icon"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:gravity="center_vertical"
+                android:src="@drawable/clock_icon" />
+
+            <TextView
+                android:id="@+id/date_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Thu,Aug 23 15 at 02:32PM"
+                android:textColor="#848484"
+                android:textSize="@dimen/heading5_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin" >
+
+        <ImageView
+            android:id="@+id/location_tv_icon"
+            android:layout_width="@dimen/small_icon"
+            android:layout_height="@dimen/small_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:src="@drawable/location_icon" />
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/small_padding"
+            android:layout_toRightOf="@id/location_tv_icon"
+            android:singleLine="true"
+            android:maxEms="3"
+            android:ellipsize="end"
+            android:text="NewHyderabadYork"
+            android:textColor="#848484"
+            android:textSize="@dimen/heading5_text_size" />
+
+        <ImageView
+            android:id="@+id/distance_icon"
+            android:layout_width="@dimen/small_icon"
+            android:layout_height="@dimen/small_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_toRightOf="@id/location_tv"
+            android:src="@drawable/distance" />
+
+        <TextView
+            android:id="@+id/distance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:layout_toLeftOf="@+id/date_time_tv_icon"
+            android:layout_toRightOf="@id/distance_icon"
+            android:text="5m"
+            android:textColor="#848484"
+            android:textSize="@dimen/heading5_text_size" />
+
+        <TextView
+            android:id="@+id/date_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_icon"
+            android:layout_marginRight="@dimen/small_icon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minEms="8"
+            android:gravity="right"
+            android:text="Fri,Feb, 10 15 7.00pm"
+            android:textColor="#848484"
+            android:textSize="@dimen/heading5_text_size" />
+
+        <ImageView
+            android:id="@+id/date_time_tv_icon"
+            android:layout_width="@dimen/small_icon"
+            android:layout_height="@dimen/small_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_toLeftOf="@id/date_time_tv"
+            android:src="@drawable/clock_icon" />
+    </RelativeLayout>
+    -->
+
+    <com.mysportsshare.mysportscast.view.SquareImageView
+        android:id="@+id/event_pic_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_event_pic" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/normal_margin" >
+
+        <ImageView
+            android:id="@+id/cheers_tv_icon"
+            android:layout_width="@dimen/small_icon"
+            android:layout_height="@dimen/small_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:src="@drawable/mega_phone" />
+
+        <TextView
+            android:id="@+id/cheers_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toRightOf="@id/cheers_tv_icon"
+            android:text="0 cheers"
+            android:textColor="#848484"
+            android:textSize="@dimen/heading5_text_size" />
+
+        <TextView
+            android:id="@+id/attending_cnt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:text="0 attending"
+            android:textColor="#848484"
+            android:textSize="@dimen/heading5_text_size" />
+
+        <ImageView
+            android:id="@+id/status_tv_icon"
+            android:layout_width="@dimen/small_icon"
+            android:layout_height="@dimen/small_icon"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_toLeftOf="@id/attending_cnt_tv"
+            android:contentDescription="@string/Event_det_date"
+            android:scaleType="fitXY"
+            android:src="@drawable/likes" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cast_llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/border_v"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:background="#A4A4A4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.mysportsshare.mysportscast.view.RoundedImageView
+                android:id="@+id/cast_prof_pic"
+                android:layout_width="@dimen/user_img"
+                android:layout_height="@dimen/user_img"
+                android:layout_marginLeft="@dimen/small_margin"
+                android:layout_marginRight="@dimen/small_margin"
+                android:src="@drawable/profile_pic_dummy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/follower_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/heading5_text_size" />
+
+                <TextView
+                    android:id="@+id/comment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/heading5_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

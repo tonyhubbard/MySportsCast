@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainEventLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f4f4" >
+
+    <RelativeLayout
+        android:id="@+id/menu_llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_llyt"
+        android:background="#3772BE"
+        android:padding="@dimen/small_padding" >
+
+        <ImageView
+            android:id="@+id/event_menu_iv"
+            android:layout_width="@dimen/heading1_menu_img_size"
+            android:layout_height="@dimen/heading1_menu_img_size"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/heading2_menu_img_padding"
+            android:src="@drawable/menu_icon" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="@dimen/heading2_text_size" />
+
+        <ImageView
+            android:id="@+id/filter_btn"
+            android:layout_width="@dimen/heading1_menu_img_size"
+            android:layout_height="@dimen/heading1_menu_img_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/heading2_img_padding"
+            android:src="@drawable/filter_icon" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu_llyt" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/events_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:divider="#00000000"
+                android:dividerHeight="10dp"
+                android:focusable="true"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/eventsStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="No Events Found in Your Location. Please use the filters to broaden your area or search other locations."
+                android:textSize="@dimen/heading1_text_size"
+                android:visibility="gone" />
+            
+             <TextView
+                android:id="@+id/createEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/eventsStatus"
+                android:gravity="center"
+                android:text="CREATE YOUR EVENT"
+                android:textColor="#2E64FE"
+                android:textSize="@dimen/heading1_text_size"
+                android:visibility="gone" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-1589399713821641/6728748219" />
+
+            <RelativeLayout
+                android:id="@+id/loading_footer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/footer_height"
+                android:layout_above="@+id/adView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:background="#00000000"
+                android:padding="@dimen/normal_padding"
+                android:visibility="gone" >
+
+                <com.mysportsshare.mysportscast.floatingpoint.ProgressBarCircularIndeterminate
+                    android:id="@+id/progressBarCircularIndeterminate"
+                    android:layout_width="@dimen/heading2_img_size"
+                    android:layout_height="@dimen/heading2_img_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#1E88E5" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_margin="-60dp"
+            android:background="#f5f4f4"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/drawer_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice"
+                android:divider="#6c4821"
+                android:dividerHeight="0.5dp" />
+        </LinearLayout>
+        <!--
+        <LinearLayout
+            android:id="@+id/filterdrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layoutDirection="rtl"
+            android:layout_margin="-60dp"
+            android:background="#f5f4f4"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/filter_drawer_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice"
+                android:divider="#6c4821"
+                android:dividerHeight="0.5dp" />
+        </LinearLayout>
+        -->
+    </android.support.v4.widget.DrawerLayout>
+
+    <!--
+         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Yet to implement"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+    -->
+
+</RelativeLayout>

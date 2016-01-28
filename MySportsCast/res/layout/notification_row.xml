@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="@dimen/medium_padding"
+    android:paddingBottom="@dimen/medium_padding" 
+    >
+
+    <com.mysportsshare.mysportscast.view.RoundedImageView
+        android:id="@+id/user_img"
+        android:layout_width="@dimen/user_img"
+        android:layout_height="@dimen/user_img"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/profile_pic_dummy" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/small_margin"
+        android:layout_toRightOf="@id/user_img"
+        android:textSize="@dimen/heading3_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/userTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/userName"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:layout_toRightOf="@id/user_img"
+        android:singleLine="false"
+        android:textSize="@dimen/heading5_text_size" />
+
+    <LinearLayout
+        android:id="@+id/frnd_req_action_btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/userTag"
+        android:layout_toRightOf="@+id/user_img"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/normal_padding"
+        android:visibility="visible" >
+
+        <LinearLayout
+             android:id="@+id/accept_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:layout_weight="1"
+            android:background="@drawable/following_btn"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/accept_btn_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/following_str"
+                android:duplicateParentState="true"
+                android:padding="@dimen/padding_small_icon"
+                android:src="@drawable/following" />
+
+            <TextView
+                android:id="@+id/accept_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:padding="@dimen/padding_small_icon"
+                android:text="@string/accept_str"
+                android:textColor="@color/white"
+                android:textSize="@dimen/heading3_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reject_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_margin"
+            android:layout_weight="1"
+            android:background="@drawable/follow_btn"
+            android:gravity="center" >
+
+            <!-- <ImageView
+                android:id="@+id/reject_btn_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/following_str"
+                android:duplicateParentState="true"
+                android:padding="@dimen/padding_small_icon"
+                android:src="@drawable/follow" /> -->
+
+            <TextView
+                android:id="@+id/reject_btn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:padding="@dimen/padding_small_icon"
+                android:text="@string/reject_str"
+                android:textColor="@color/com_facebook_blue"
+                android:textSize="@dimen/heading3_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+   <!--  <LinearLayout
+        android:id="@+id/frnd_req_action_btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userTag"
+        android:layout_toRightOf="@+id/user_img"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/accept_btn"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="accept" >
+        </Button>
+
+        <Button
+            android:id="@+id/reject_btn"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="reject" />
+    </LinearLayout> -->
+
+</RelativeLayout>

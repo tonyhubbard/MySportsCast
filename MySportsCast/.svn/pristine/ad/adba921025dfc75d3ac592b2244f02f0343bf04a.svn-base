@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"   
+    android:padding="@dimen/normal_padding" 
+    android:background="@color/white" >
+
+    <com.mysportsshare.mysportscast.view.RoundedImageView
+        android:id="@+id/user_img"
+        android:layout_width="@dimen/user_img"
+        android:layout_height="@dimen/user_img"
+        android:layout_margin="@dimen/normal_margin"
+        android:duplicateParentState="true"
+        android:src="@drawable/profile_pic_dummy" />
+
+    <TextView
+        android:id="@+id/user_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_marginLeft="15dp"        
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"        
+        android:layout_toRightOf="@id/user_img"
+        android:layout_gravity="center"
+        android:duplicateParentState="true"
+        android:gravity="left|center_vertical"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/userTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/follower_row_followbuton"
+        android:duplicateParentState="true"        
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/follower_row_img"
+        android:maxLines="2"        
+        android:text="users tag"
+        android:visibility="gone" />
+
+</RelativeLayout>

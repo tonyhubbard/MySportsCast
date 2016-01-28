@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/dialog_filter_sport_name"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Sports"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/dialog_filter_sports_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/dialog_filter_sport_name" >
+
+                <Spinner
+                    android:id="@+id/dialog_filter_sport_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/dropdownimage" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dialog_filter_event_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/dialog_filter_sports_layout"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Events"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/dialog_filter_events_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/dialog_filter_event_name"
+                android:background="@drawable/input_box" >
+
+                <Spinner
+                    android:id="@+id/dialog_filter_events_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#585858"
+                    android:textColorHint="#585858"
+                    android:textSize="16sp" >
+                </Spinner>
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/dropdownimage" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dialog_filter_date_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/dialog_filter_events_layout"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Events"
+                android:textColor="@color/black" />
+
+            <RelativeLayout
+                android:id="@+id/dialog_filter_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/dialog_filter_date_name"
+                android:background="@drawable/input_box" >
+
+                <Spinner
+                    android:id="@+id/dialog_filter_date_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#585858"
+                    android:textColorHint="#585858"
+                    android:textSize="16sp" >
+                </Spinner>
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/dropdownimage" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/dialog_filter_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Apply" />
+
+</RelativeLayout>

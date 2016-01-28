@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/footer_llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#121212"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <RelativeLayout
+            android:id="@+id/foothome_rlyt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2E2E2E" >
+
+            <ImageView
+                android:id="@+id/foothome"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="clickFooterHome"
+                android:padding="10dp"
+                android:src="@drawable/footer_home" />
+            <!--
+                 <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/foothome"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"                
+                android:text="Events"/>
+            -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footsearch_rlyt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2E2E2E" >
+
+            <ImageView
+                android:id="@+id/footsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="clickFooterSearch"
+                android:padding="10dp"
+                android:src="@drawable/footer_search" />
+            <!--
+                 <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/footsearch"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:text="Search"/>
+            -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footcamera_rlyt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2E2E2E" >
+
+            <ImageView
+                android:id="@+id/footMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="clickFooterCamera"
+                android:padding="10dp"
+                android:src="@drawable/footer_addmedia" />
+            <!--
+                 <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/footMedia"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:text="Media"/>
+            -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footnotification_rlyt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2E2E2E" >
+
+            <ImageView
+                android:id="@+id/footNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="clickFooterNotifications"
+                android:padding="7dp"
+                android:src="@drawable/footer_notification" />
+
+            <TextView
+                android:id="@+id/app_notify_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/footNotification"
+                android:layout_alignTop="@id/footNotification"
+                android:background="@drawable/round_shape_notification"
+                android:text="1"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/very_small_people_text_size"
+                android:gravity="center"
+                android:visibility="invisible" />
+      
+            <!--
+                  <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/footNotification"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:text="Notifications"
+                android:singleLine="true"                
+                android:ellipsize="end"/>
+            -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/footprofilePic_rlyt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2E2E2E" >
+
+            <ImageView
+                android:id="@+id/footProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:onClick="clickFooterProfilePic"
+                android:padding="7dp"
+                android:src="@drawable/footer_prof_pic" />
+            <!--
+                 <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/footProfile"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:text="Profile"/>
+            -->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/home_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer_llyt"
+        android:background="#f5f4f4" />
+
+</RelativeLayout>

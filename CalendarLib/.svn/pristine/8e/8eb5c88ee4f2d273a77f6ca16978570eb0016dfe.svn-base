@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/lib_calendar_day_size"
+    android:layout_height="@dimen/lib_calendar_day_size"
+    android:layout_marginLeft="@dimen/lib_calendar_day_padding_sides"
+    android:layout_marginRight="@dimen/lib_calendar_day_padding_sides" >
+
+    <TextView
+        android:id="@+id/lib_calendar_day_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/list_selector_holo_light"
+        android:gravity="center"
+        android:textColor="@color/lib_calendar_day_textcolor"
+        android:textSize="@dimen/lib_calendar_day_textsize" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/lib_calendar_day_categories"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/lib_category_padding_bottom"
+        android:layout_marginLeft="@dimen/lib_category_view_padding_startend"
+        android:layout_marginRight="@dimen/lib_category_view_padding_startend"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

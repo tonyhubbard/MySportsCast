@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/placeItem"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:padding="@dimen/normal_padding"
+    android:textSize="@dimen/heading3_text_size"
+    android:layout_margin="@dimen/normal_margin" 
+    android:text="text"/>

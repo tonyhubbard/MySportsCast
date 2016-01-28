@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center" >
+
+    <GridView
+        android:id="@+id/searchListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:numColumns="2"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </GridView>
+    <!--
+      android:horizontalSpacing="@dimen/normal_padding"
+     android:verticalSpacing="3dp"
+    -->
+
+     <RelativeLayout
+        android:id="@+id/loading_notification_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:background="#00000000"
+        android:padding="@dimen/normal_padding"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+        </ProgressBar>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/searchListViewText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textSize="@dimen/heading1_text_size"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>

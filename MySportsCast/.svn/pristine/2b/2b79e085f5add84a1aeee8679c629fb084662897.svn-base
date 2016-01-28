@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/report_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Report Inappropriate"
+        android:textColor="@color/blue" />
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/fragment_bg_clr"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/fb_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Facebook"
+        android:textColor="@color/blue" />
+
+    <Button
+        android:id="@+id/twitter_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Twitter"
+        android:textColor="@color/blue" />
+
+    <Button
+        android:id="@+id/instagram_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Instagram"
+        android:textColor="@color/blue" />
+
+</LinearLayout>

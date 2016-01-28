@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f5f4f4" >
+
+    <RelativeLayout
+        android:id="@+id/forget_pwd_header_llyt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#121212" >
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="14dp"
+            android:src="@drawable/back_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:text="FORGOT PASSWORD"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/heading1_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/forget_pwd_header_llyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragment_bg_clr"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/forget_pwd_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:text="@string/forget_pwd_text"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/forget_pwd_email"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/normal_margin"
+            android:background="@drawable/input_box"
+            android:hint="@string/email_txt"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:paddingRight="@dimen/normal_padding"
+            android:paddingTop="@dimen/normal_padding" 
+            android:paddingBottom="@dimen/normal_padding"/>
+
+        <Button
+            android:id="@+id/forget_pwd_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/normal_margin"
+            android:background="@color/com_facebook_blue"
+            android:textColor="#ffffff"
+            android:text="@string/forget_pwd_btn_text" />
+    </LinearLayout>
+
+</RelativeLayout>

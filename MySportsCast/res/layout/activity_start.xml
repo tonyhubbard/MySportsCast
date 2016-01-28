@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_page_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/splash_screen_inner" >
+        </android.support.v4.view.ViewPager>
+
+        <Button
+            android:id="@+id/getstart_btn"
+            android:layout_width="@dimen/start_button_wt"
+            android:layout_height="@dimen/start_button_ht"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/start_button_bottom_margin"
+            android:background="@drawable/get_started_btn"
+            android:onClick="clickGetStarting" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/getstart_btn"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/medium_padding" >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/unselected_circle" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_padding"
+                android:background="@drawable/unselected_circle" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_padding"
+                android:background="@drawable/unselected_circle" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_padding"
+                android:background="@drawable/unselected_circle" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_padding"
+                android:background="@drawable/unselected_circle" />
+        </LinearLayout>
+
+        <!--
+             <com.mysportsshare.mysportscast.utils.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/getstart_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:padding="5dip" />
+        -->
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/start_img_top_margin"
+        android:padding="30dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

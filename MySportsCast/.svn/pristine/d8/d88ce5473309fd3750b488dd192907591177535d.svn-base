@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen_inner"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="@dimen/start_img_top_margin"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Capturing Sports Events History one photo,video and blog at a time."
+            android:textColor="#ffffff"
+            android:textSize="@dimen/heading2_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_set_llyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/start_button_ht"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/home_screen_btn_margin"
+            android:layout_marginRight="@dimen/home_screen_btn_margin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_instagram"
+            android:onClick="clickLoginInstagram" />
+
+        <com.facebook.widget.LoginButton
+            android:id="@+id/btn_facebook"
+            style="@style/Facebook_login"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/start_button_ht"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/home_screen_btn_margin"
+            android:layout_marginRight="@dimen/home_screen_btn_margin"
+            facebook:confirm_logout="false"
+            facebook:fetch_user_info="true" />
+
+        <Button
+            android:id="@+id/btn_twtr"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/start_button_ht"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/home_screen_btn_margin"
+            android:layout_marginRight="@dimen/home_screen_btn_margin"
+            android:background="@drawable/login_twitter"
+            android:onClick="loginTwitter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_set_llyt"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_email"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/start_button_ht"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/home_screen_btn_margin"
+            android:layout_marginRight="@dimen/home_screen_btn_margin"
+            android:background="@drawable/login_email"
+            android:onClick="clickEmailRegister"
+            android:padding="@dimen/medium_padding"
+            android:textSize="@dimen/heading2_text_size" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:onClick="clickToRegister"
+            android:padding="@dimen/medium_padding"
+            android:text="@string/register"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/heading2_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

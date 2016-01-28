@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg_clr" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragment_bg_clr" >
+
+        <RelativeLayout
+            android:id="@+id/userProfile_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:background="@color/app_theam" > <!-- android:background="@color/app_theam" -->
+
+            <com.mysportsshare.mysportscast.view.RoundedImageView
+                android:id="@+id/userProfile_img_iv"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:src="@drawable/profile_pic_dummy" />
+
+            <TextView
+                android:id="@+id/userProfile_user_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/userProfile_img_iv"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="20sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <!--
+    <GridView
+        android:id="@+id/userProfile_summaryInfo_GridView"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/userProfile_header_layout"        
+        android:background="@color/black"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3" >
+    </GridView>
+        -->
+
+        <LinearLayout
+            android:id="@+id/userprofile_summaryInfo_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userProfile_header_layout"
+            android:background="@color/fragment_bg_clr"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/userprof_followersLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <!--
+                     <ImageView
+                    android:id="@+id/userprofile_followerCnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                -->
+
+                <TextView
+                    android:id="@+id/userprofile_followerCntValTV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/userprof_followerTextTV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userprofile_followerCntValTV"
+                    android:gravity="center"
+                    android:text="followers"
+                    android:textColor="@color/gray"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userprof_followingLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <!--
+                     <ImageView
+                    android:id="@+id/userprofile_followingCnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                -->
+
+                <TextView
+                    android:id="@+id/userprofile_followingCntValTV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/userprof_followingTextTV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userprofile_followingCntValTV"
+                    android:gravity="center"
+                    android:text="following"
+                    android:textColor="@color/gray"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userprof_CheckinsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="10dp" >
+
+                <!--
+                     <ImageView
+                    android:id="@+id/userprofile_CheckinsCnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                -->
+
+                <TextView
+                    android:id="@+id/userprofile_CheckinsCntValTV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/userprof_CheckinsTextTV"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userprofile_CheckinsCntValTV"
+                    android:gravity="center"
+                    android:text="check ins"
+                    android:textColor="@color/gray"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!--
+        <View
+            android:id="@+id/userProfile_summaryInfo_line"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/userprofile_summaryInfo_layout"
+            android:background="@color/gray" />
+        -->
+
+        <LinearLayout
+            android:id="@+id/userProfile_edit_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userprofile_summaryInfo_layout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="5" >
+
+                <Button
+                    android:id="@+id/userProfile_edit_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/com_facebook_blue"
+                    android:gravity="center|center_vertical"
+                    android:text="Edit Your Profile"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/heading2_text_size"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/follow_btn_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/following_btn"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible" >
+                    <!-- android:padding="@dimen/normal_padding" -->
+                    <ImageView
+                        android:id="@+id/follow_btn_img"
+                        android:layout_width="@dimen/follow_icon"
+                        android:layout_height="@dimen/follow_icon"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/following_str"
+                        android:duplicateParentState="true"
+                        android:padding="@dimen/padding_small_icon"
+                        android:src="@drawable/following" />
+
+                    <TextView
+                        android:id="@+id/follow_btn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:minWidth="@dimen/follow_btn_width"
+                        android:padding="@dimen/padding_small_icon"
+                        android:text="@string/following_str"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/heading3_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/userProfile_Calender_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:src="@drawable/user_profile_calendar" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/userProfile_edit_line"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/userProfile_edit_layout"
+            android:background="@color/gray" />
+
+        <!--
+    <GridView
+        android:id="@+id/userProfile_img_GridView"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/userProfile_edit_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/fragment_bg_clr"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" >
+    </GridView>
+        -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/userProfile_edit_layout" >
+
+            <LinearLayout
+                android:id="@+id/userprofile_navigation_hide"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/medium_margin"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/userprofile_privacy_img"
+                    android:layout_width="@dimen/normal_img"
+                    android:layout_height="@dimen/normal_img"
+                    android:src="@drawable/profile_pic_dummy" />
+
+                <TextView
+                    android:id="@+id/userprofile_privacy_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/normal_margin"
+                    android:gravity="center"
+                    android:text="@string/privacy_user_str"
+                    android:textSize="@dimen/heading2_text_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/userprofile_navigation_all_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/fragment_bg_clr"
+                android:gravity="center"
+                android:scrollbars="horizontal|vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:id="@+id/userprofile_navigate_all_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.mysportsshare.mysportscast.view.RoundedImageView
+                        android:id="@+id/userprofile_all_IV"
+                        android:layout_width="@dimen/normal_img"
+                        android:layout_height="@dimen/normal_img"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/user_profile_all" />
+
+                    <TextView
+                        android:id="@+id/userprofile_all_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="All"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/userprofile_navigate_Videos_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/userprofile_navigate_all_layout"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.mysportsshare.mysportscast.view.RoundedImageView
+                        android:id="@+id/userprofile_Videos_IV"
+                        android:layout_width="@dimen/normal_img"
+                        android:layout_height="@dimen/normal_img"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/user_profile_videos" />
+
+                    <TextView
+                        android:id="@+id/userprofile_videos_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="Videos"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/userprofile_navigate_Photos_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/userprofile_navigate_Videos_layout"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.mysportsshare.mysportscast.view.RoundedImageView
+                        android:id="@+id/userprofile_Photos_IV"
+                        android:layout_width="@dimen/normal_img"
+                        android:layout_height="@dimen/normal_img"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/user_profile_photos" />
+
+                    <TextView
+                        android:id="@+id/userprofile_Photos_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="Photos"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/userprofile_navigate_Casts_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/userprofile_navigate_all_layout"
+                    android:layout_below="@id/userprofile_navigate_all_layout"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.mysportsshare.mysportscast.view.RoundedImageView
+                        android:id="@+id/userprofile_Casts_IV"
+                        android:layout_width="@dimen/normal_img"
+                        android:layout_height="@dimen/normal_img"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/user_profile_casts" />
+
+                    <TextView
+                        android:id="@+id/userprofile_Casts_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="Casts"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/userprofile_navigate_Tags_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/userprofile_navigate_Videos_layout"
+                    android:layout_alignTop="@id/userprofile_navigate_Casts_layout"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.mysportsshare.mysportscast.view.RoundedImageView
+                        android:id="@+id/userprofile_Tags_IV"
+                        android:layout_width="@dimen/normal_img"
+                        android:layout_height="@dimen/normal_img"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/user_profile_yourtags" />
+
+                    <TextView
+                        android:id="@+id/userprofile_Tags_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="Your Tags"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/userprofile_navigate_Events_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/userprofile_navigate_Photos_layout"
+                    android:layout_alignTop="@id/userprofile_navigate_Casts_layout"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <com.mysportsshare.mysportscast.view.RoundedImageView
+                        android:id="@+id/userprofile_Events_IV"
+                        android:layout_width="@dimen/normal_img"
+                        android:layout_height="@dimen/normal_img"
+                        android:layout_margin="5dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/user_profile_yourevents" />
+
+                    <TextView
+                        android:id="@+id/userprofile_Events_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="Your Events"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

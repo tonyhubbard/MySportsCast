@@ -1,0 +1,3 @@
+#Contains API Secret used to validate your application. Commit to internal source control; avoid making secret public.
+#Thu Jun 25 16:09:31 IST 2015
+apiSecret=6d5cec4641f193265b22ff5c45ce2e137cfbd74b507547fd1c705455b94196a4

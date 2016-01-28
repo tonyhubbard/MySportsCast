@@ -1,0 +1,18 @@
+<inset xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <shape android:shape="rectangle" >
+        <solid 
+		    android:color="@android:color/white" />
+        <stroke
+            android:width="1dp"
+            android:color="@color/com_facebook_blue" >
+        </stroke>
+
+        <corners
+            android:bottomLeftRadius="@dimen/follow_btn_corners"
+            android:bottomRightRadius="@dimen/follow_btn_corners"
+            android:topLeftRadius="@dimen/follow_btn_corners"
+            android:topRightRadius="@dimen/follow_btn_corners" />
+    </shape>
+
+</inset>

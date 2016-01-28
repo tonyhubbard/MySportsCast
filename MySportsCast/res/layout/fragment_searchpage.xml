@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_facebook_blue"
+        android:padding="@dimen/normal_padding"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/search_page_img"
+            android:layout_width="@dimen/heading3_img_size"
+            android:layout_height="@dimen/heading3_img_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/normal_padding"
+            android:src="@drawable/search_icon" />
+
+        <EditText
+            android:id="@+id/search_page_ed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/normal_margin"
+            android:layout_toLeftOf="@+id/search_page_img"
+            android:background="@drawable/input_search_box"
+            android:hint="@string/search_input_str"
+            android:padding="@dimen/normal_padding"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textSize="@dimen/heading2_text_size" />
+    </RelativeLayout>
+
+    <com.mysportsshare.mysportscast.view.SlidingTabLayout
+        android:id="@+id/viewPagerTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textSize="@dimen/heading2_text_size" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragment_bg_clr" >
+
+        <!--
+             <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pagerTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000" />
+        -->
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

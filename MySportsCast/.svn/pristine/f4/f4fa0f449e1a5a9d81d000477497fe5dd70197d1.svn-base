@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainEventLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f4f4" >
+
+    <RelativeLayout
+       android:id="@+id/cast_events_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_facebook_blue"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/search_page_img"
+            android:layout_width="@dimen/heading4_img_size"
+            android:layout_height="@dimen/heading4_img_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/normal_padding"
+            android:src="@drawable/search_icon" />
+
+        <EditText
+            android:id="@+id/search_page_ed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/normal_margin"
+            android:layout_toLeftOf="@+id/search_page_img"
+            android:background="@drawable/input_search_box"
+            android:hint="@string/search_for_events"
+            android:padding="@dimen/normal_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/heading2_text_size" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/cast_events_header"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/loading_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/footer_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:background="#00000000"
+            android:padding="@dimen/normal_padding"
+            android:visibility="gone" >
+
+            <com.mysportsshare.mysportscast.floatingpoint.ProgressBarCircularIndeterminate
+                android:id="@+id/progressBarCircularIndeterminate"
+                android:layout_width="@dimen/heading2_img_size"
+                android:layout_height="@dimen/heading2_img_size"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="#1E88E5" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/searchListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/fragment_bg_clr"
+            android:horizontalSpacing="3dp"
+            android:numColumns="2"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="none"
+            android:verticalSpacing="3dp" >
+        </GridView>
+    </RelativeLayout>
+
+     <TextView
+        android:id="@+id/searchListViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="NO DATA FOUND"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>

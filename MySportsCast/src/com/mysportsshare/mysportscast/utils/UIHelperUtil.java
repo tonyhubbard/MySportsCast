@@ -1,0 +1,67 @@
+package com.mysportsshare.mysportscast.utils;
+
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.location.LocationManager;
+import android.widget.Toast;
+
+import com.mysportsshare.mysportscast.application.MySportsApp;
+
+/**
+ * All common toast messages and dialogs will be placed here.
+ * @author Koti
+ *
+ */
+public class UIHelperUtil {
+	
+	/**
+	 * Show the toast message
+	 * @param context
+	 * @param message
+	 */
+	public static void showToastMessage(String message) {
+		Toast.makeText(MySportsApp.getAppContext(), message, Toast.LENGTH_SHORT).show();
+	}
+	
+	public static void showGPSDialogSettingsFromAppContext(final Context appContext) {
+		LocationManager lm = (LocationManager)appContext.getSystemService(Context.LOCATION_SERVICE);
+		boolean gps_enabled = false;
+
+		try {
+		    gps_enabled = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);
+		} catch(Exception ex) {}
+		if(gps_enabled){
+			/* by koti
+			 * Intent getGpsValues = new Intent(appContext, LocationService.class);
+			appContext.startService(getGpsValues);*/
+		}else{
+		AlertDialog.Builder alertDialog = new AlertDialog.Builder(appContext);
+		alertDialog.setTitle("Location Settings");
+		alertDialog.setMessage("Enable Location");
+		// setting Dialog cancelable to false
+		alertDialog.setCancelable(false);
+		// On pressing Settings button
+		alertDialog.setPositiveButton("Settings",
+				new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				appContext.startActivity(new Intent(
+						android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+				dialog.cancel();
+			}
+		});
+
+		// on pressing cancel button
+		alertDialog.setNegativeButton("Close",
+				new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				dialog.dismiss();
+			}
+		});
+		// Showing Alert Message
+		alertDialog.show();
+		}
+	}
+
+}

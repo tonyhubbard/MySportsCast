@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D8D8"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:id="@+id/login_set_llyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_background" >
+
+            <Button
+                android:id="@+id/btn_instagram_share"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/linked_btn_size"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Instagram"
+                android:textColor="#3772BE"
+                android:textSize="@dimen/linked_name_size"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/instagram_cb"
+                android:layout_width="@dimen/linked_cb_size"
+                android:layout_height="@dimen/linked_btn_size"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_background" >
+
+            <com.facebook.widget.LoginButton
+                android:id="@+id/btn_facebook_share"
+                style="@style/Facebook_linked_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/linked_btn_size"
+                android:text="Facebook"
+                android:textColor="#3772BE"
+                android:textSize="@dimen/linked_name_size"
+                android:textStyle="bold"
+                facebook:confirm_logout="true"
+                facebook:fetch_user_info="true" />
+
+            <CheckBox
+                android:id="@+id/facebook_cb"
+                android:layout_width="@dimen/linked_cb_size"
+                android:layout_height="@dimen/linked_btn_size"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_background" >
+
+            <Button
+                android:id="@+id/btn_twtr_share"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/linked_btn_size"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Twitter"
+                android:textColor="#3772BE"
+                android:textSize="@dimen/linked_name_size"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/twitter_cb"
+                android:layout_width="@dimen/linked_cb_size"
+                android:layout_height="@dimen/linked_btn_size"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:clickable="false"
+                android:focusable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

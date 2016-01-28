@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/fragment_bg_clr"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD VIDEO"
+        android:textSize="@dimen/heading2_text_size"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.mysportsshare.mysportscast.view.SquareImageView
+            android:id="@+id/event_media_video_capture_btn"
+            android:layout_width="@dimen/large_img"
+            android:layout_height="@dimen/large_img"
+            android:layout_margin="@dimen/normal_margin"
+            android:background="@drawable/media_video"
+            android:padding="@dimen/normal_padding"
+            android:text="@string/capture_video"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Video"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#f5f4f4"
+    android:gravity="left|center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sports_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/addacast_btn_height"
+        android:paddingLeft="@dimen/normal_margin"
+        android:gravity="center_vertical"
+        android:textColor="#585858"
+        android:textSize="@dimen/normal_text_size" />
+
+</LinearLayout>

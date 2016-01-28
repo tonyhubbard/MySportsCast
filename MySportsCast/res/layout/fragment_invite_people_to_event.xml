@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/invite_people_listViewText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="NO USERS FOUND"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/invite_people_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_facebook_blue" >
+
+        <ImageView
+            android:id="@+id/invite_search_people_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="5dp"
+            android:src="@drawable/search_icon"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/invite_people_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="5dp"
+                    android:layout_toLeftOf="@+id/invite_search_people_img"
+                    android:background="@android:color/white"
+                    android:clickable="true"
+                    android:hint="@string/invite_people_str"
+                    android:singleLine="true"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/select_indication_ht"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/gray" />
+
+                <com.mysportsshare.mysportscast.view.CustomScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" >
+
+                    <com.mysportsshare.mysportscast.view.FlowLayout
+                        android:id="@+id/flow_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white" >
+                    </com.mysportsshare.mysportscast.view.FlowLayout>
+                </com.mysportsshare.mysportscast.view.CustomScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/invite_people_done_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:background="@color/com_facebook_blue"
+        android:text="Done"
+        android:textColor="#ffffff" />
+
+    <ListView
+        android:id="@+id/invite_users_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/invite_people_done_btn"
+        android:layout_below="@id/invite_people_bar"
+        android:divider="@color/lightgray"
+        android:dividerHeight="@dimen/select_indication_ht" />
+
+</RelativeLayout>

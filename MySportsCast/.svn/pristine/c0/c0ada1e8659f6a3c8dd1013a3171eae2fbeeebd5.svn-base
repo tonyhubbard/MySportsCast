@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg_clr" >
+
+    <RelativeLayout
+        android:id="@+id/loading_footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:background="#00000000"
+        android:padding="@dimen/normal_padding"
+        android:visibility="gone" >
+
+        <com.mysportsshare.mysportscast.floatingpoint.ProgressBarCircularIndeterminate
+            android:id="@+id/progressBarCircularIndeterminate"
+            android:layout_width="@dimen/heading2_img_size"
+            android:layout_height="@dimen/heading2_img_size"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#1E88E5" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/media_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/loading_footer_layout"
+        android:layout_margin="@dimen/normal_margin"
+        android:background="@color/fragment_bg_clr"
+        android:divider="#00000000"
+        android:dividerHeight="@dimen/normal_margin" >
+    </ListView>
+
+</RelativeLayout>

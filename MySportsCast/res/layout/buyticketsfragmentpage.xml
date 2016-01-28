@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/booktickets_iv"
+        android:layout_width="@dimen/large_img"
+        android:layout_height="@dimen/large_img"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/book_tickets_image" />
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booktickets_iv"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/normal_padding"
+            android:text="Buy tickets"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/heading1_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/normal_padding"
+            android:text="Buy tickets to professional sporting events"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/heading3_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

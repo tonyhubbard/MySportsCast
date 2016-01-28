@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/edit_corner"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/addMedia_cast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Add Cast"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/addMedia_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addMedia_cast"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Add Photo"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/addMedia_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addMedia_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Add Video"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/addMedia_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addMedia_video"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Cancel"
+        android:textColor="@color/black" />
+
+</LinearLayout>

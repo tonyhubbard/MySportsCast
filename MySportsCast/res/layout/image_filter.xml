@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray"
+    android:orientation="vertical" >
+
+    <com.mysportsshare.mysportscast.view.SquareImageView
+        android:id="@+id/img_filtered"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/img_filter_themes"
+        android:layout_alignParentTop="true"
+        
+         />
+<!-- @dimen/normal_img_container -->
+    <com.mysportsshare.mysportscast.view.HorizontalListView
+        android:id="@+id/img_filter_themes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_img_container"
+        android:background="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/small_margin"
+        android:scrollbars="horizontal" >
+    </com.mysportsshare.mysportscast.view.HorizontalListView>
+
+    <TextView
+        android:id="@+id/img_filter_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Please wait. Applying filters...."
+        android:textSize="@dimen/heading1_text_size"
+        android:visibility="visible" />
+
+</RelativeLayout>

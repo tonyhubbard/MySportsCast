@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f4f4" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f4f4" >
+
+        <RelativeLayout
+            android:id="@+id/events_sub_header_llyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d87818"
+            android:padding="@dimen/normal_padding" >
+
+            <RelativeLayout
+                android:id="@+id/events_sub_header_llyt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/small_margin" >
+
+                <TextView
+                    android:id="@+id/event_det_sport_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/small_margin"
+                    android:text="@string/Event_det_sport"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/heading3_text_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/event_det_sport_name_tv"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="@dimen/heading2_img_size"
+                            android:layout_height="@dimen/heading2_img_size"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/event_details_calender" />
+
+                        <TextView
+                            android:id="@+id/event_det_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/Event_det_date"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/heading5_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="@dimen/heading2_img_size"
+                            android:layout_height="@dimen/heading2_img_size"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/event_details_clock" />
+
+                        <TextView
+                            android:id="@+id/event_det_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/Event_det_time"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/heading5_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/event_det_sport_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/small_margin"
+                    android:text="@string/Event_det_sport_cat"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/heading3_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/event_det_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/events_sub_header_llyt1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/large_margin"
+                android:layout_marginRight="@dimen/large_margin"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/Event_det_title"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/heading2_text_size"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/event_det_buy_ticket_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_det_sub_title"
+                android:layout_centerHorizontal="true" >
+
+               <!--  <ImageView
+                    android:id="@+id/event_det_buy_ticket"
+                    android:layout_width="@dimen/start_button_wt"
+                    android:layout_height="@dimen/heading3_img_size"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/label_blue_buy"
+                    android:duplicateParentState="true"
+                    android:visibility="gone" /> -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/label_blue_buy"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="BUY TICKET"
+                    android:textColor="#d87818"
+                    android:textSize="@dimen/heading2_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_det_buy_ticket_layout"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/event_det_dist_layout"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/event_det_location_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/location_icon_white" />
+
+                    <TextView
+                        android:id="@+id/event_det_location_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:singleLine="true"
+                        android:text="@string/Event_det_loc"
+                        android:textColor="@drawable/text_color"
+                        android:textSize="@dimen/heading5_text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/event_det_dist_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/heading2_img_size"
+                        android:layout_height="@dimen/heading2_img_size"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/event_details_distance" />
+
+                    <TextView
+                        android:id="@+id/event_det_dist_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/Event_det_dis"
+                        android:textColor="@drawable/text_color"
+                        android:textSize="@dimen/heading5_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/options_llyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/events_sub_header_llyt"
+            android:layout_centerVertical="true"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="@dimen/small_padding"
+            android:weightSum="4" >
+
+            <LinearLayout
+                android:id="@+id/event_details_cheers_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/event_details_cheer_img"
+                    android:layout_width="@dimen/event_detail_header_icon_ht"
+                    android:layout_height="@dimen/event_detail_header_icon_ht"
+                    android:padding="@dimen/small_padding"
+                    android:src="@drawable/event_details_cheers" />
+
+                <TextView
+                    android:id="@+id/cheers_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 cheers"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/heading5_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/event_details_attending_count_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/event_details_attending_count"
+                    android:layout_width="@dimen/event_detail_header_icon_ht"
+                    android:layout_height="@dimen/event_detail_header_icon_ht"
+                    android:padding="@dimen/small_padding"
+                    android:src="@drawable/event_details_attending" />
+
+                <TextView
+                    android:id="@+id/attendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 attending"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/heading5_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/event_details_am_attending_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/event_details_iamattending"
+                    android:layout_width="@dimen/event_detail_header_icon_ht"
+                    android:layout_height="@dimen/event_detail_header_icon_ht"
+                    android:clickable="true"
+                    android:padding="@dimen/small_padding"
+                    android:src="@drawable/event_details_iamattending_empty" />
+
+                <TextView
+                    android:id="@+id/i_am_attending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="i am attending"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/heading5_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/event_details_add_media_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/event_details_add_media_img"
+                    android:layout_width="@dimen/event_detail_header_icon_ht"
+                    android:layout_height="@dimen/event_detail_header_icon_ht"
+                    android:padding="@dimen/small_padding"
+                    android:src="@drawable/event_details_addmedia" />
+
+                <TextView
+                    android:id="@+id/add_media"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="add media"
+                    android:textColor="#848484"
+                    android:textSize="@dimen/heading5_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_llyt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/footer_height"
+            android:layout_below="@+id/options_llyt"
+            android:background="#3772BE" >
+
+            <ImageView
+                android:id="@+id/menu_iv"
+                android:layout_width="@dimen/event_detail_header_icon_ht"
+                android:layout_height="@dimen/event_detail_header_icon_ht"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/medium_padding"
+                android:src="@drawable/filter_icon" />
+
+            <TextView
+                android:id="@+id/event_details_media_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="ALL BROADCASTS"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/heading2_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

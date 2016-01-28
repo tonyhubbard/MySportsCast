@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <color name="white">#FFFFFF</color> -->
+    <color name="l_blue">#909BAA</color>
+    <color name="d_blue">#6D7B92</color>
+    <!-- <color name="gray">#CCCCCC</color> -->
+    <color name="d_gray">#666</color>
+    <!-- <color name="black">#000000</color> -->
+    <color name="highlight_color">#E6E6E6</color>
+    <color name="fragment_bg_clr">#f5f4f4</color>
+    <color name="green">#87D37C</color>
+    <!-- <color name="blue">#22A7F0</color> -->
+    
+    <!-- Color for tab indications -->
+    <color name="ColorPrimary">#ffffff</color>
+    <color name="ColorPrimaryDark">#c31c13</color>
+    <color name="tabsScrollColor">#3B5998</color>
+    
+    <color name="following">#87D07C</color>
+    <color name="requested">#BFBFBF</color>
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:background="@drawable/input_box"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.mysportsshare.mysportscast.view.RoundedImageView
+            android:id="@+id/cast_event_details_comment_profile_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/profile_pic_dummy" />
+
+        <TextView
+            android:id="@+id/cast_event_details_media_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cast_event_details_comment_profile_pic"
+            android:padding="2dp"
+            android:text="GVSharma"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cast_event_details_comment_media_pic"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_event_pic" />
+
+    <VideoView
+        android:id="@+id/cast_event_details_comment_media_video"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"        
+        android:visibility="gone" >
+    </VideoView>
+
+    <TextView
+        android:id="@+id/cast_event_details_cast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:maxLines="4"
+        android:minLines="4"
+        android:text="cast"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/cast_event_details_comment_media_cheers"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/mega_phone" />
+
+        <TextView
+            android:id="@+id/cast_event_details_comment_media_cheers_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cast_event_details_comment_media_cheers"
+            android:padding="2dp"
+            android:text="0 cheers"
+            android:textColor="#848484"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/cast_event_details_comment_media_status"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@id/cast_event_details_comment_media_cheers_tv"
+            android:padding="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/event_details_comments" />
+
+        <TextView
+            android:id="@+id/cast_event_details_comment_media_total_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@id/cast_event_details_comment_media_status"
+            android:padding="2dp"
+            android:text=" comments"
+            android:textColor="#848484"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/cast_event_details_comment_media_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/event_details_share_black" />
+    </RelativeLayout>
+
+</LinearLayout>

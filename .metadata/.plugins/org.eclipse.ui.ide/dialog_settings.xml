@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="/home/koteswararao/Desktop/google-play-services_lib.zip"/>
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item value="603" key="DIALOG_WIDTH"/>
+		<item value="219" key="DIALOG_Y_ORIGIN"/>
+		<item value="551" key="DIALOG_X_ORIGIN"/>
+		<item value="510" key="DIALOG_HEIGHT"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+	</section>
+</section>

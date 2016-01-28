@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MySportsCastV5.1</string>
+    <string name="app_Version_name">MySportsCastV5.1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+     <string name="terms_and_conditions">Terms &amp; Conditions.</string>
+
+    <!-- strings names -->
+    <string name="login_email">Login with Email</string>
+    <string name="register">Not a member yet? Sign up here.</string>
+    <string name="broadcast_txt">Broadcast Your Photo Video &amp; Blog Updates</string>
+    <string name="checkin_track_txt">Check in &amp; track your attendance</string>
+    <string name="Event_det_sport">SPORTS</string>
+    <string name="Event_det_sport_cat">CATEGORY</string>
+    <string name="Event_det_title">EVENT TITLE</string>
+    <string name="Event_det_date">Week,Month day year</string>
+    <string name="Event_det_time">hh.ss am/pm</string>
+    <string name="Event_det_loc">Location</string>
+    <string name="Event_det_dis">Distance</string>
+    <string name="status_update">Status</string>
+    <string name="no_name">No name</string>
+
+    <!-- validations -->
+    <!-- <string name="username">Name:</string> -->
+    <string name="fname_txt">First Name</string>
+    <string name="lname_txt">Last Name</string>
+    <string name="useremail">Email:</string>
+    <string name="password">Password:</string>
+    <string name="email_txt">Email id </string>
+    <string name="search_txt">Search for an Event</string>
+    <string name="discovery_txt">Search for sports,users,teams,locations</string>
+    <string name="conf_email_txt">Confirm Email</string>
+    <string name="pwd_txt">Password</string>
+    <string name="dob_txt">dd/mm/yyyy</string>
+    <string name="pwd_confirm_txt">Confirm password</string>
+    <string name="add_comment">Enter comment</string>
+    <string name="pick_gallery_img">GALLERY</string>
+    <string name="pick_camera_img">CAMERA</string>
+    <string name="capture_video">CAPTURE VIDEO</string>
+
+    <!-- <string name="network_wrong">Something went wrong please check your internet</string> -->
+    <string name="empty_pwd">Please enter password to sign up</string>
+    <string name="invalid_email">Please enter valid email</string>
+    <string name="empty_first_name">Please enter first name to sign up</string>
+    <string name="empty_last_name">Please enter last name to sign up</string>
+    <string name="empty_email">Please enter email id to sign up</string>
+    <string name="search_input_str">Search for sports, users, teams, events, locations</string>
+    <string name="search_for_events">Search for events</string>
+    <string name="invite_people_str">Search for users</string>
+    <string name="accept_str">ACCEPT</string>
+    <string name="reject_str">REJECT</string>
+    <string name="following_str">FOLLOWING</string>
+    <string name="follow_str"> FOLLOW  </string>
+    <string name="requested_str">REQUESTED</string>
+    <string name="privacy_user_str">This user is private.</string>
+
+    <!-- <string name="app_id">391148271069567</string> -->
+    <!-- <string name="app_id">613125242155496</string> -->
+    <string name="app_id">1621923041361882</string>
+    <string name="forget_pwd_link_text">Forgot password?</string>
+    <string name="forget_pwd_text">To reset your password, enter the email address you use to sign in.  New password will send to this email address.</string>
+        <!-- Check your email - reset password will send to your mail -->
+    <string name="forget_pwd_btn_text">Reset Password</string>
+    <string name="forget_pwd_success_msg">Your account password reset successfully.  Please check your mail.</string>
+    <string name="forget_pwd_mail_error_msg">Password reseted but unable to send mail.  Please contact administrator.</string>
+    <string name="forget_pwd_fail_msg">Unable to reset password.  Please check the email id.</string>
+    <string name="change_pwd_btn_text">Change Password</string>
+    <string name="change_old_pwd_text">Old Password</string>
+    <string name="change_new_pwd_text">New Password</string>
+    <string name="change_conf_pwd_text">Confirm Password</string>
+    <string name="toast_no_network">No network available. Please check your internet connection</string>
+
+    <!-- ALL WEBSERVICES -->
+    <!-- SportCast common url -->
+
+
+    <!--
+    Actual web server address
+    <string name="common_url">http://192.168.0.142/MySportsShare/web_services/</string>
+    -->
+
+
+    <!--
+    Temporary web server address 
+    <string name="common_url">http://192.10.250.62/MySportsShare/web_services/</string>
+    -->
+
+
+    <!-- Public/Client IP web server address -->
+    <!-- <string name="common_url">http://182.75.34.62/MySportsShare/web_services/</string> -->
+
+    <!-- register social service -->
+    <string name="register_social">register_social.php</string>
+
+    <!-- user login service -->
+    <string name="user_login">user_login.php</string>
+    <string name="forget_password">forgot_password.php</string>
+    <string name="update_password">update_password.php</string>
+    <!-- get upcoming events service -->
+    <!-- http://182.75.34.62/MySportsShare/web_services/get_upcoming_events.php?user_id=3&user_lat=43.59685959999999&user_lng=3.8502617000000328&page_id=0 -->
+    <string name="upcoming_events">get_upcoming_events.php</string>
+    <string name="inprogress_events">get_inprogress_events.php</string>
+    <string name="finished_events">get_finished_events.php</string>
+    <string name="calender_events">get_calendar_events.php</string>
+    <string name="calender_range_events">get_date_range_events.php</string>
+    <string name="get_user_posted_events">get_user_post_events.php</string>
+    <string name="get_user_posted_cal_events">get_user_single_day_events.php</string>
+    <string name="get_following_users">get_following_friends.php</string>
+    <string name="get_follower_users">get_follower_friends.php</string>
+    <string name="get_checked_events">get_user_checkin_events.php</string>
+    <string name="updateFollowStatus">follow_unfollow.php</string>
+    <string name="acceptUserRequest">follow_accept.php</string>
+    <string name="search_people_event_info">search_people_event_info.php</string>
+    <string name="reporting_abuse">report_abuse.php</string>
+    <string name="get_calendarSummaryInfo">get_event_dates_list.php</string>
+    <string name="get_UserPosted_calendarSummaryInfo">get_user_post_event_dates_list.php</string>
+    <string name="update_event_media_cheer">update_event_media_cheer.php</string>
+    <string name="update_event_cheer">update_event_like.php</string>
+    <string name="get_event_media_comment">get_event_media_comments.php</string>
+    <string name="delete_event_media_comment">delete_comment.php</string>
+    <string name="add_event_media_comment">add_event_media_comment.php</string>
+    <string name="add_a_cast">add_cast_to_event.php</string>
+    <string name="update_a_cast">update_cast.php</string>
+    <string name="add_photo">upload_event_media.php</string>
+    <string name="update_photo">update_event_media.php</string>
+    <string name="delete_media">delete_media.php</string>
+    <!-- register service -->
+    <string name="user_register">register_email.php</string>
+
+    <!-- getting sports list service -->
+    <string name="get_sports_list">get_sports_list.php</string>
+
+    <!-- getting my team info -->
+    <string name="get_my_team_info">get_my_team_info.php</string>
+
+    <!-- getEvent Details service -->
+    <string name="get_event_details">get_event_details.php</string>
+
+    <!-- get casts info service -->
+    <string name="get_profile_casts">get_profile_user_casts.php</string>
+    <string name="get_profile_photos">get_profile_user_photos.php</string>
+    <string name="get_profile_videos">get_profile_user_videos.php</string>
+    <string name="get_profile_tags">get_profile_user_tags.php</string>
+    <string name="get_profile_all">get_profile_user_all.php</string>
+
+    <!-- fetches user details from web service -->
+    <string name="get_user_details">get_user_details.php</string>
+
+    <!-- upload user details to web service -->
+    <string name="update_user_details">update_profile.php</string>
+
+    <!-- get profile details -->
+    <string name="get_Profle_Details">get_profile_info.php</string>
+    <!-- list all notifications -->
+    <string name="get_notifications">get_notifications.php</string>
+    <string name="get_media_detail">get_media_detail.php</string>
+    
+    <!-- service response toast -->
+    <string name="service_toast">Some thing went wrong at server side</string>
+    <string name="invalid_cred_toast">Invalid email and password</string>
+
+    <!-- add an event webservice -->
+    <string name="add_an_event">add_event.php</string>
+
+    <!-- update device token service -->
+    <string name="update_device_token">update_device_token.php</string>
+
+    <!-- search service service -->
+
+
+    <!-- cheers for event service -->
+    <string name="cheers_for_event">get_event_cheers.php</string>
+
+    <!-- attending for event service -->
+    <string name="attending_for_event">get_event_attendees.php</string>
+
+    <!-- i am attending service -->
+    <string name="iamattending">update_event_attending.php</string>
+
+    <!-- Dialog messages -->
+    <string name="update_location">please wait getting current location</string>
+    
+    <!-- Default search -->
+    <string name="default_search_events">default_search_people_event_info.php</string>
+
+    <!-- menu items list -->
+   <string-array name="menuItems">
+        <!-- <item>Upcoming Events</item>
+        <item>In-progress Events</item> -->
+        <item>Today\'s Events</item>
+       <!--  <item>Finished Events</item> -->
+        <item>All Events Calendar</item>
+        <item>Add Event</item>
+    </string-array> 
+      <!-- <item>Calendar Events</item> -->
+    <!-- menu items list -->
+   <string-array name="addedmenuItems">
+        <!-- <item>Upcoming Events</item>
+        <item>In-progress Events</item> -->
+        <item>Today\'s Events</item>
+       <!--  <item>Finished Events</item> -->
+        <item>All Events Calendar</item>
+    </string-array> 
+
+    <!-- menu items list -->
+    <string-array name="filtermenuItems">
+        <item>Sports </item>
+        <item>Date</item>
+    </string-array>
+
+    <!-- menu items list -->
+    <string-array name="broadcasts">
+        <item>All BroadCasts</item>
+        <item>Photos</item>
+        <item>Videos</item>
+        <item>Casts</item>
+    </string-array>
+
+    <!-- String array for event types -->
+    <string-array name="eventtypes_array">
+       <!--  <item>Event type</item> -->
+        <item>Challenge</item>
+        <item>Event</item>
+        <item>Game</item>
+        <item>Meet Up</item>
+        <item>Other</item>
+        <item>Practice</item>
+    </string-array>
+
+    <!-- String array for times -->
+    <string-array name="time_array">
+
+        <!-- <item>Start time</item> -->
+        <item>0:30 AM</item>
+        <item>1:00 AM</item>
+        <item>1:30 AM</item>
+        <item>2:00 AM</item>
+        <item>2:30 AM</item>
+        <item>3:00 AM</item>
+        <item>3:30 AM</item>
+        <item>4:00 AM</item>
+        <item>4:30 AM</item>
+        <item>5:00 AM</item>
+        <item>5:30 AM</item>
+        <item>6:00 AM</item>
+        <item>6:30 AM</item>
+        <item>7:00 AM</item>
+        <item>7:30 AM</item>
+        <item>8:00 AM</item>
+        <item>8:30 AM</item>
+        <item>9:00 AM</item>
+        <item>9:30 AM</item>
+        <item>10:00 AM</item>
+        <item>10:30 AM</item>
+        <item>11:00 AM</item>
+        <item>11:30 AM</item>
+        <item>12:00 AM</item>
+        <item>12:30 PM</item>
+        <item>1:00 PM</item>
+        <item>1:30 PM</item>
+        <item>2:00 PM</item>
+        <item>2:30 PM</item>
+        <item>3:00 PM</item>
+        <item>3:30 PM</item>
+        <item>4:00 PM</item>
+        <item>4:30 PM</item>
+        <item>5:00 PM</item>
+        <item>5:30 PM</item>
+        <item>6:00 PM</item>
+        <item>6:30 PM</item>
+        <item>7:00 PM</item>
+        <item>7:30 PM</item>
+        <item>8:00 PM</item>
+        <item>8:30 PM</item>
+        <item>9:00 PM</item>
+        <item>9:30 PM</item>
+        <item>10:00 PM</item>
+        <item>10:30 PM</item>
+        <item>11:00 PM</item>
+        <item>11:30 PM</item>
+        <item>12:00 PM</item>
+    </string-array>
+    <string-array name="end_time_array">
+        <item>End time</item>
+        <item>0:30</item>
+        <item>1:00</item>
+        <item>1:30</item>
+        <item>2:00</item>
+        <item>2:30</item>
+        <item>3:00</item>
+        <item>3:30</item>
+        <item>4:00</item>
+        <item>4:30</item>
+        <item>5:00</item>
+        <item>5:30</item>
+        <item>6:00</item>
+        <item>6:30</item>
+        <item>7:00</item>
+        <item>7:30</item>
+        <item>8:00</item>
+        <item>8:30</item>
+        <item>9:00</item>
+        <item>9:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+        <item>24:00</item>
+    </string-array>
+
+    <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Place Id: %2$s&lt;/i&gt;&lt;br/&gt;Address: %3$s&lt;br/&gt;Phone: %4$s&lt;br/&gt;Website: %5$s</string>
+<string name="clik_here"><u>Click here</u></string>
+</resources>

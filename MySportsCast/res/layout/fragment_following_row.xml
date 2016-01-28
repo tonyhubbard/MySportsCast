@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white" >
+
+    <com.mysportsshare.mysportscast.view.RoundedImageView
+        android:id="@+id/following_row_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/profile_pic_dummy" />
+
+    <!--
+         <Button
+        android:id="@+id/following_row_followbuton"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:padding="2dp"        
+        android:background="@color/lightgreen"
+        android:drawableLeft="@drawable/following"
+        android:gravity="center_vertical"
+        android:text="FOLLOWING"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+    -->
+
+    <LinearLayout
+        android:id="@+id/following_row_followbuton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:minWidth="@dimen/follow_btn_width"
+        android:background="@drawable/following_btn"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/normal_padding">
+
+        <ImageView
+            android:id="@+id/following_btn_img"
+            android:layout_width="@dimen/follow_icon"
+            android:layout_height="@dimen/follow_icon"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/following_str"
+            android:duplicateParentState="true"
+            android:padding="@dimen/small_padding"
+            android:src="@drawable/following" />
+        <TextView
+            android:id="@+id/following_btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_small_icon"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            
+            android:text="@string/following_str"
+            android:textSize="@dimen/heading4_text_size"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/following_row_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/following_row_followbuton"
+        android:layout_toRightOf="@id/following_row_img"
+        android:text="USER NAME" />
+
+    <TextView
+        android:id="@+id/following_row_userTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/following_row_userName"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/following_row_followbuton"
+        android:layout_toRightOf="@id/following_row_img"
+        android:maxLines="2"
+        android:visibility="invisible"
+        android:text="users tag" />
+
+</RelativeLayout>
